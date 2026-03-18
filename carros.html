@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+
+<body onload="mostrarCarros()">
+
+<nav>
+
+<div class="logo">Renda o Seu Carro</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="carros.html">Carros</a></li>
+<li><a href="minhas_reservas.html">Minhas Reservas</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+
+</nav>
+
+<h2>Carros Disponíveis</h2>
+
+
+<div class="filters">
+
+<input id="pesquisa" placeholder="Pesquisar">
+
+<select id="marcaFiltro">
+<option value="">Todas</option>
+<option value="BMW">BMW</option>
+<option value="Audi">Audi</option>
+<option value="Mercedes">Mercedes</option>
+</select>
+
+
+<select id="tipoFiltro">
+<option value="">Todos</option>
+<option value="Desportivo">Desportivo</option>
+<option value="Sedan">Sedan</option>
+</select>
+
+
+<input id="precoFiltro" type="number" placeholder="Preço máximo">
+
+
+<select id="ordenar">
+<option value="">Ordenar</option>
+<option value="menor">Preço menor</option>
+<option value="maior">Preço maior</option>
+</select>
+
+
+<button onclick="filtrarCarros()">
+Filtrar
+</button>
+
+</div>
+
+
+<div id="catalog" class="catalog"></div>
+
+</body>
+</html>
